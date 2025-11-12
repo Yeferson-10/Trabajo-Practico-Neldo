@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../CSS/css.css">
     <title>Neosite</title>
 </head>
 <body>
-        <header>
-            <h1>Bienvenido a Neosite</h1>
-            <h5>Este es un local de Equipamento electronico de sonido y audio</h5>
-        
-
-        <nav>
-            <!-- logo de la pagina -->
-            <a href="#">Inicio</a>
-            <a href="#">Cuenta</a>
-            <a href="#">Compras</a>
-            <!-- barra de navegacion -->
-            <a href="#">Contacto</a>
-        </nav>
-
-    </header>
+        <header class="Encabezado">
+            
+            <nav class="NavBar">
+                <!-- logo de la pagina -->
+                <a href="#">Inicio</a>
+                <a href="#">Cuenta</a>
+                <a href="#">Compras</a>
+                <!-- barra de navegacion -->
+                <a href="#">Contacto</a>
+            </nav>
+            
+            <div>
+                <h1>Bienvenido a Neosite</h1>
+                <h5>Este es un local de Equipamento electronico de sonido y audio</h5>  <!-- Descripción dentro del encabezado -->
+            </div> <!--  este div funciona como divisor con el nav para hacer el fondo transparente -->
+        </header>
 
         <main>
+            <!-- Primer articulo -->
             <article class="Producto_1">
+                 <!-- frente de la tarjeta del artículo -->
                 <div class="flip">
-                    <img src="../Assets/Imagenes (Productos)/Parlantes para PC.png" alt="Parlantes de Escritorio">
+                    <!-- <img src="../Assets/Imagenes (Productos)/Parlantes para PC.png" alt="Parlantes de Escritorio"> -->
                 </div>
+                <!-- reverso de la tarjeta del artículo -->
                 <div class="backflip">
                     <h3>Parlante para PC o Laptop</h3>
                     <h5>Parlantes comodos, sencillos para darle un sonido calido distribuido a tu nave</h5>
@@ -36,21 +40,27 @@
                 </div>
             </article>
 
+            <!-- segundo artículo -->
             <article class="Producto_2">
+                 <!-- frente de la tarjeta del artículo -->
                 <div class="flip">
-                    <img src="../Assets/Imagenes (Productos)/Parlantes coaxiales.png" alt="Parlantes Coaxiales">
+                    <!-- <img src="../Assets/Imagenes (Productos)/Parlantes coaxiales.png" alt="Parlantes Coaxiales"> -->
                 </div>
+                <!-- reverso de la tarjeta del artículo -->
                 <div class="backflip">
                     <h3>Parlantes Coaxiales</h3>
                     <h5>Ideales parlantes para darte una sensacion mas vivida al auto</h5>
                     <p>"Precio"</p>
                 </div>
             </article>
-
+            
+            <!-- tercer articulo -->
             <article class="Producto_3">
+                <!-- frente de la tarjeta del artículo -->
                 <div class="flip">
-                    <img src="../Assets/Imagenes (Productos)/Torre.png" alt="Parlante Torre">
+                    <!-- <img src="../Assets/Imagenes (Productos)/Torre.png" alt="Parlante Torre"> -->
                 </div>
+                <!-- reverso de la tarjeta del artículo -->
                 <div class="backflip">
                     <h3>Torre de Sonido</h3>
                     <h5>¿Queres poder? tenes poder</h5>
@@ -61,6 +71,7 @@
 
 
         <footer>
+
             <section>
                 <h4>Sobre la Página</h4>
                 <ul>
@@ -69,6 +80,7 @@
                     <li>Ubicación</li>           
                 </ul>
             </section>
+
             <section>
                 <h4>Nosotros</h4>
                 <ul>
@@ -77,6 +89,7 @@
                     <li>Teléfonos</li>                  
                 </ul>
             </section>
+
             <section>
                 <h4>Nuestras Redes</h4>
                     <a href="#">Instagram</a>
@@ -85,5 +98,6 @@
                     <a href="#">Twitter</a>
             </section>
         </footer>
+        
 </body>
 </html>
