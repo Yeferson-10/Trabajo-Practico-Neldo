@@ -1,0 +1,57 @@
+
+article {
+    width: 300px;
+}
+
+.Productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+}
+
+article {
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);        /* fondo tenue */
+    border: 1px solid #DDD2C0;          /* borde beige */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  article:hover {
+    transform: translateY(-6px);        /* efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  }
+  
+  .flip img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFDAB9;   /* detalle cálido */
+  }
+  
+  .backflip {
+    padding: 12px;
+    text-align: center;
+    color: #DDD2C0;                     /* texto beige */
+    font-family: cursive;
+  }
+  
+  .backflip h3 {
+    margin: 8px 0;
+    color: #FFDAB9;                     /* título durazno */
+  }
+  
+  .backflip p {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: #FFDAB9;
+    color: #000;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+

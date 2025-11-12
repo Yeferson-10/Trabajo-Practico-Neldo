@@ -6,14 +6,14 @@
 }
 
 .Encabezado {
-    background-image: url(../Assets/Imagenes\ Fondos/3.png); 
+    background-image: url(../Assets/Imagenes\ Fondos/5.png); 
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 951px 400px;
+    background-size: 100% 65%;
     background-attachment: fixed;
     
     text-align: center;
-    height: 400px;
+    height: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
   }
 
 .Encabezado h1{
-    font-size: 41.5px;
+    font-size: 55px;
     letter-spacing: 3px;
     font-family: cursive;
     padding: 0%;
@@ -42,7 +42,7 @@
 }
 
 .Encabezado h5{
-    font-size: 13.5px;
+    font-size: 15px;
     letter-spacing: 0.5px;
     font-family: cursive;
     color: #DDD2C0;
@@ -60,7 +60,7 @@
 
 .Encabezado nav a{
     font-family: cursive;
-    font-size: 17px;
+    font-size: 20px;
     /* color: #FFDAB9; */
     color: #DDD2C0;
     text-decoration: none;

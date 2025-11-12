@@ -1,0 +1,68 @@
+body {
+    background-color: #fef3ea; /* tono pastel durazno */
+
+}
+
+
+/* conjunto de los productos  */
+.Productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+    background-color: #fef3ea;
+}
+
+  /* conjunto de las imagenes, nombre, descripcion y precio de los productos  */
+.Productos article {
+    width: 400px;
+    height: 410px;
+    /* background-color: blanchedalmond; */
+    box-sizing: border-box;
+    perspective: 1000px;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+}
+
+.Productos article:hover{
+    transform: rotateY(-180deg);
+}
+
+  /* imagen de los productos  */
+.Productos article img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+}
+
+  /* nombre de los productos */
+.Productos article h3{ 
+    padding-top: 10px;
+    border-top: 2px solid #DDD2C0;
+}
+
+.Productos article p{
+    text-align: end;
+    
+}
+
+section article div{
+    position: absolute;
+    backface-visibility: hidden;
+    display: block;
+}
+
+.flip {
+    /* background-color: aquamarine; */
+}
+
+.backflip {
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-top: auto;
+    transform: rotateY(180deg);
+}
