@@ -27,7 +27,7 @@
     perspective: 1000px;
     transition: 1.5s;
     transform-style: preserve-3d;
-    margin: 15px;
+    margin: 30px 10px;
 } 
 
 .Productos article:hover{
