@@ -1,21 +1,25 @@
-body {
-    background-color: #fef3ea; /* tono pastel durazno */
-
-}
-
 
 /* conjunto de los productos  */
 .Productos {
+    font-family: sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 100px;
     align-items: flex-start;
-    background-color: #fef3ea;
+    background-color: #EDE3D0;
+    background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0,0,0,0.03) 0px,
+    rgba(0,0,0,0.03) 1px,
+        transparent 1px,
+        transparent 20px
+    );
 }
-
   /* conjunto de las imagenes, nombre, descripcion y precio de los productos  */
 .Productos article {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    border-radius: 10px; 
     width: 400px;
     height: 410px;
     /* background-color: blanchedalmond; */
@@ -23,7 +27,8 @@ body {
     perspective: 1000px;
     transition: 1.5s;
     transform-style: preserve-3d;
-}
+    margin: 15px;
+} 
 
 .Productos article:hover{
     transform: rotateY(-180deg);
@@ -35,7 +40,6 @@ body {
     height: 320px;
     object-fit: contain;
 }
-
   /* nombre de los productos */
 .Productos article h3{ 
     padding-top: 10px;
@@ -44,17 +48,12 @@ body {
 
 .Productos article p{
     text-align: end;
-    
 }
 
 section article div{
     position: absolute;
     backface-visibility: hidden;
     display: block;
-}
-
-.flip {
-    /* background-color: aquamarine; */
 }
 
 .backflip {
@@ -66,3 +65,5 @@ section article div{
     margin-top: auto;
     transform: rotateY(180deg);
 }
+  
+  
