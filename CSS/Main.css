@@ -27,7 +27,7 @@
     perspective: 1000px;
     transition: 1.5s;
     transform-style: preserve-3d;
-    margin: 30px 10px;
+    margin: 15px;
 } 
 
 .Productos article:hover{
@@ -65,5 +65,120 @@ section article div{
     margin-top: auto;
     transform: rotateY(180deg);
 }
+
+.pie-de-pagina{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.formulario {
+    background-color: #EDE3D0;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 20px;
+    font-family: sans-serif;
+  }
+  
+  form {
+    background-color: #fffaf2;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  
+  form:hover {
+    transform: scale(1.01);
+  }
+  
+  form h2 {
+    font-family: cursive;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD2C0;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  /* Botón animado */
+  button[type="submit"] {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: #FFDAB9;
+    color: #333;
+    font-size: 18px;
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #FFCBA4;
+  }
+  
+  button[type="submit"] div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+  }
+  
+  button[type="submit"] div:first-child {
+    transform: translateY(0);
+  }
+  
+  button[type="submit"] div:last-child {
+    position: absolute;
+    inset: 0;
+    transform: translateY(100%);
+  }
+  
+  button[type="submit"]:hover div:first-child {
+    transform: translateY(-100%);
+  }
+  
+  button[type="submit"]:hover div:last-child {
+    transform: translateY(0);
+  }
+  
   
   

@@ -1,29 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
-
-.Encabezado {
+  }
+  
+  /* Encabezado */
+  .Encabezado {
     background-image: url(../Assets/Imagenes\ Fondos/5.png); 
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% 65%;
     background-attachment: fixed;
-    
     text-align: center;
     height: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
-}
-
-/* Este div encierra el H1 y H5 que estan en el encabezado para separarlo del NAV y poder hacerle el BackGround */
-.Encabezado div {
+    justify-content: space-between;
+  }
+  
+  /* Fondo difuminado del texto */
+  .Encabezado div {
     background-color: rgba(0, 0, 0, 0.2);
-    /* efecto difuminado */
     backdrop-filter: blur(0.5px);
     align-self: center;
     margin: auto;
@@ -31,26 +30,48 @@
     width: 100%;
     padding: 10px;
   }
-
-.Encabezado h1{
+  
+  /* Títulos */
+  .Encabezado h1 {
     font-size: 55px;
     letter-spacing: 3px;
     font-family: cursive;
-    padding: 0%;
     color: #FFDAB9;
-    /* color: #CBB3A9; */
-}
-
-.Encabezado h5{
+  }
+  
+  .Encabezado h5 {
     font-size: 15px;
     letter-spacing: 0.5px;
     font-family: cursive;
     color: #DDD2C0;
-    /* color: #CFC7C2; */
-}
-
-nav {
+  }
+  
+  /* Navegación */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  /* Botón hamburguesa */
+  nav button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #FFDAB9;
+    cursor: pointer;
+    z-index: 101;
+  }
+  
+  /* Lista de navegación */
+  .nav-list {
+    list-style-type: none;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 10px;
     background-color: #aaa8;
@@ -59,23 +80,20 @@ nav {
     justify-content: center;
     gap: 60px;
     z-index: 100;
-   
-}
-
-nav a{
-    
+    transition: all 0.3s ease;
+  }
+  
+  /* Enlaces */
+  nav a {
     font-family: cursive;
     font-size: 20px;
-    /* color: #FFDAB9; */
     color: #DDD2C0;
     text-decoration: none;
-    /* añade un efecto de  */
     transition: all 0.5s ease;
-    border-bottom: 2px solid transparent
-}
-
-.Encabezado nav a:hover{ 
-    /* color y barra cuando pasamos le mouse por arriba*/
+    border-bottom: 2px solid transparent;
+  }
+  
+  nav a:hover {
     color: #FFDAB9;
     border-bottom: 2px solid #FFDAB9;
-}
+  }

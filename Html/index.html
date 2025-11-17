@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/Encabezado.css">
     <link rel="stylesheet" href="../CSS/Main.css">
     <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Media_Tel.css">
     <!-- font family descargado desde google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +17,15 @@
 </head>
 <body>
         <header class="Encabezado">
-            
             <nav class="NavBar">
-                <!-- logo de la pagina -->
-                <a href="#">Inicio</a>
-                <a href="#">Cuenta</a>
-                <a href="#">Compras</a>
-                <!-- barra de navegacion -->
-                <a href="#">Contacto</a>
+              <button>H</button>
+              <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="../Html/Contacto.html">Contacto</a></li>
+              </ul>
+                
             </nav>
             
             <div>
@@ -230,6 +232,16 @@
             </section>
             <h4>Derechos Reservados -Ivan Bura-</h4>
         </footer>
+
+        <script>
+          const toggleButton = document.querySelector("nav button");
+          const navList = document.querySelector(".nav-list");
+        
+          toggleButton.addEventListener("click", () => {
+            navList.classList.toggle("active");
+          });
+        </script>
+        
         
 </body>
 </html>
