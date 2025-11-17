@@ -49,9 +49,9 @@
 
 /* ### NAVBAR Y MENU DE HAMBURGUESA ### */
 
-button {
+/* .hamburguesa {
   display: none;
-}
+} */
 
 @media (max-width: 700px){
 
@@ -90,11 +90,6 @@ button {
     position: fixed;
     z-index: 101;
   }
-
-    .pie-de-pagina{
-      position: absolute;
-      bottom: 0;
-    }
 
     .formulario {
       padding: 20px;
