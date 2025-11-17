@@ -91,6 +91,11 @@ button {
     z-index: 101;
   }
 
+    .pie-de-pagina{
+      position: absolute;
+      bottom: 0;
+    }
+
     .formulario {
       padding: 20px;
     }
