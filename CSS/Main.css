@@ -346,4 +346,75 @@ button:hover .star-6 {
   fill: #fffdef;
 }
 
-  
+/* ### INICIO DE SESION ### */
+
+.login {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #EDE3D0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.03) 0px,
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-box {
+  background-color: #fffaf2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: scale(1.01);
+}
+
+.login-box h1 {
+  font-family: cursive;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  font-weight: bold;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DDD2C0;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.boton-login {
+  background-color: #FFDAB9;
+  color: #333;
+  font-size: 16px;
+  font-family: cursive;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.boton-login:hover {
+  background-color: #FFCBA4;
+}
